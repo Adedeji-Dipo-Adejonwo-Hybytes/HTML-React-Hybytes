@@ -8,3 +8,5 @@ const Home = () => {
   };
   
   export default Home;
+
+  /* Change the const to functional 

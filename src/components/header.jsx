@@ -1,16 +1,18 @@
+import { Link } from 'react-router-dom';
+
 function Header(){
     return( //remember div Hero Name
     <header className="header_section">
         <div className="header_top">
           <div className="container-fluid">
             <div className="contact_nav">
-              <a href="">
+              <a href="tel:+01123455678990">
                 <i className="fa fa-phone" aria-hidden="true"></i>
                 <span>
                   Call : +01 123455678990
                 </span>
               </a>
-              <a href="">
+              <a href="mailto:demo@gmail.com">
                 <i className="fa fa-envelope" aria-hidden="true"></i>
                 <span>
                   Email : demo@gmail.com

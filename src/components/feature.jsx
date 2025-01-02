@@ -5,7 +5,7 @@ function Feature(){
           <div className="feature_container">
             <div className="box">
               <div className="img-box">
-                <svg enable-background="new 0 0 511.995 511.995" height="512" viewBox="0 0 511.995 511.995" width="512" xmlns="http://www.w3.org/2000/svg">
+                <svg enableBackground="new 0 0 511.995 511.995" height="512" viewBox="0 0 511.995 511.995" width="512" xmlns="http://www.w3.org/2000/svg">
                   <g>
                     <g>
                       <path d="m217.106 280.749-48.214 48.214c-3.905 3.905-3.905 10.237 0 14.143 1.953 1.953 4.512 2.929 7.071 2.929s5.119-.976 7.071-2.929l48.214-48.214c3.905-3.905 3.905-10.237 0-14.143s-10.237-3.905-14.142 0z" />

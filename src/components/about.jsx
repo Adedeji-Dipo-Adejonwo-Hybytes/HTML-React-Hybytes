@@ -1,8 +1,11 @@
+import { Container, Row } from "react-bootstrap";
+
 function About(){
+  return (
     <section className="about_section layout_padding-bottom">
-    <div className="container">
-      <div className="row">
-        <div className="col-lg-5 col-md-6">
+    <Container>
+      <Row>
+        <col lg={5} md={6}>
           <div className="detail-box">
             <h2>
               About us
@@ -10,17 +13,19 @@ function About(){
             <p>
               There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomisedThere are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised
             </p>
-            <a href="">
+            <Button variant="primary" href="">
               Read More
-            </a>
+            </Button>
           </div>
-        </div>
-        <div className="col-lg-7 col-md-6">
+        </col>
+        <col lg={7} md={6}>
           <div className="img-box">
-            <img src="images/about-img.jpg" alt=""/>
+            <img src="images/about-img.jpg" alt="" className="img-fluid"/>
           </div>
-        </div>
-      </div>
-    </div>
+        </col>
+      </Row>
+    </Container>
   </section>
+  )
 }
+

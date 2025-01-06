@@ -48,3 +48,4 @@ function Feature(){
       </section>
     )
 }
+export default Feature;

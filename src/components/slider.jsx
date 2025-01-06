@@ -28,3 +28,4 @@ function Slider(){
       </section>
     )
 }
+export default Slider;

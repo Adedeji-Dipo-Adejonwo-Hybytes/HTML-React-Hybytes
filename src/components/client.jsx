@@ -1,7 +1,9 @@
+import { Container, Row, Col } from "react-bootstrap";
+
 function Client(){
     return(
         <section className="client_section ">
-        <div className="container">
+        <Container>
           <div className="heading_container heading_center">
             <h2>
               What Our Clients Say
@@ -119,7 +121,8 @@ function Client(){
               </div>
             </div>
           </div>
-        </div>
+        </Container>
       </section>
     )
 }
+export default Client;

@@ -32,7 +32,7 @@ function Contact(){
             <div className="col-md-6">
               <div className="map_container">
                 <div className="map">
-                  <div id="googleMap" style="width:100%;height:100%;"></div>
+                  <div id="googleMap" style={{width:"100%",height:"100%"}}></div>
                 </div>
               </div>
             </div>
@@ -41,3 +41,4 @@ function Contact(){
       </section>
     )
 }
+export default Contact;

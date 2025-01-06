@@ -27,3 +27,4 @@ function Professional(){
       </section>
     )
 }
+export default Professional;

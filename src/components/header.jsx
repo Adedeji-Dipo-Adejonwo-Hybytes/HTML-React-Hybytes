@@ -38,16 +38,16 @@ function Header(){
               <div className="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul className="navbar-nav ">
                   <li className="nav-item active">
-                    <a className="nav-link" href="index.html">Home <span className="sr-only">(current)</span></a>
+                    <Link className="nav-link" to="/">Home <span className="sr-only">(current)</span></Link>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="about.html"> About</a>
+                    <Link className="nav-link" to="/About"> About</Link>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="service.html">Services</a>
+                    <Link className="nav-link" to="/Service">Services</Link>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="contact.html">Contact Us</a>
+                    <Link className="nav-link" to="/Contact">Contact Us</Link>
                   </li>
                 </ul>
               </div>
@@ -57,3 +57,4 @@ function Header(){
       </header>
     )
 }
+export default Header;

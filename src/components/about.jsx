@@ -1,11 +1,11 @@
-import { Container, Row } from "react-bootstrap";
+import { Container, Row, Col, Button } from "react-bootstrap";
 
 function About(){
   return (
     <section className="about_section layout_padding-bottom">
     <Container>
       <Row>
-        <col lg={5} md={6}>
+        <Col lg={5} md={6}>
           <div className="detail-box">
             <h2>
               About us
@@ -17,15 +17,16 @@ function About(){
               Read More
             </Button>
           </div>
-        </col>
-        <col lg={7} md={6}>
+        </Col>
+        <Col lg={7} md={6}>
           <div className="img-box">
             <img src="images/about-img.jpg" alt="" className="img-fluid"/>
           </div>
-        </col>
+        </Col>
       </Row>
     </Container>
   </section>
   )
 }
+export default About;
 

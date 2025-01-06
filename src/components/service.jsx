@@ -1,4 +1,4 @@
-function service(){
+function Service(){
     return(
         <section className="service_section layout_padding">
         <div className="container ">
@@ -64,3 +64,4 @@ function service(){
       </section>
     )
 }
+export default Service;

@@ -72,3 +72,4 @@ function Info(){
     </section>
     )
 }
+export default Info;

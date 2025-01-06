@@ -1,6 +1,7 @@
 import { useState } from 'react'
-import './assets/css/bootstrap.css';
-import './assets/css/styles.css';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.css'; 
+import './assets/css/style.css';
 import './assets/css/responsive.css';
 import './assets/css/font-awesome.min.css';
 import Home from './pages/Home'; 
@@ -29,7 +30,7 @@ function App() {
     <Router>
       <Header />
       <Routes>
-        <Route path="/home" element={<><Home />
+        <Route path="/" element={<><Home />
                                      <About />
                                      <Client />
                                      <Contact />
@@ -43,8 +44,9 @@ function App() {
         <Route path="/about" element={ <><AboutUs/> <About/></>}/>
         <Route path="/services" element={ <><Services/> <Service/></>}/>
         <Route path="/contact" element={ <><ContactUs/> <Contact/></>}/>
-      <Footer />
+      
       </Routes>
+      <Footer />
 
 
     </Router>

@@ -1,9 +1,5 @@
 import { useState } from 'react'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import 'bootstrap/dist/css/bootstrap.css'; 
-import './assets/css/style.css';
-import './assets/css/responsive.css';
-import './assets/css/font-awesome.min.css';
 import Home from './pages/Home'; 
 import AboutUs from './pages/AboutUs';
 import Services from './pages/Services';
@@ -21,7 +17,10 @@ import Slider from './components/Slider';
 
 
 
-import './App.css'
+
+
+
+
 
 function App() {
 
@@ -30,15 +29,17 @@ function App() {
     <Router>
       <Header />
       <Routes>
-        <Route path="/" element={<><Home />
-                                     <About />
-                                     <Client />
-                                     <Contact />
-                                     <Feature />
-                                     <Info />
+        <Route path="/" element={<>
+        <Home />
+        
+        <Slider />
+        <Feature />
+        <About />      
                                      <Professional />
                                      <Service />
-                                     <Slider />
+                                     <Client />
+                                     <Contact />
+                                     <Info />
                        
         </>} />
         <Route path="/about" element={ <><AboutUs/> <About/></>}/>

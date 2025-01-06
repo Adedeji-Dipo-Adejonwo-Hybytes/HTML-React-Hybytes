@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 function Client(){
     return(
         <section className="client_section ">
-        <Container>
+        <div className="container">
           <div className="heading_container heading_center">
             <h2>
               What Our Clients Say
@@ -121,7 +121,7 @@ function Client(){
               </div>
             </div>
           </div>
-        </Container>
+        </div>
       </section>
     )
 }

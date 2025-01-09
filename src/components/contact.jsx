@@ -23,18 +23,7 @@ function Contact(){
           <div className="row">
             <div className="col-md-6">
               <form action="">
-                <div>
-                  <input type="text" placeholder="Name" />
-                </div>
-                <div>
-                  <input type="text" placeholder="Phone Number" />
-                </div>
-                <div>
-                  <input type="email" placeholder="Email" />
-                </div>
-                <div>
-                  <input type="text" className="message-box" placeholder="Message" />
-                </div>
+                {forumMap}
                 <div className="d-flex ">
                   <button>
                     SEND

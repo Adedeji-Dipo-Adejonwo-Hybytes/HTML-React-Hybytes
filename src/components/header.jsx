@@ -6,7 +6,7 @@ const pages = [{id:"Home", link:"/"},
   {id:"Contact Us",link:"Contact"}
 ]
 const pagesMap = pages.map(pages => (
-  <li className="nav-item active" key={page.id}>
+  <li className="nav-item active" key={pages.id}>
   <Link className="nav-link" to={pages.link}>{pages.id}
   {pages.id === "Home"?<span className="sr-only">(current)</span>:null}</Link>
 </li>
@@ -49,18 +49,7 @@ function Header(){
   
               <div className="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul className="navbar-nav ">
-                  <li className="nav-item active">
-                    <Link className="nav-link" to="/">Home <span className="sr-only">(current)</span></Link>
-                  </li>
-                  <li className="nav-item">
-                    <Link className="nav-link" to="/About"> About</Link>
-                  </li>
-                  <li className="nav-item">
-                    <Link className="nav-link" to="/Service">Services</Link>
-                  </li>
-                  <li className="nav-item">
-                    <Link className="nav-link" to="/Contact">Contact Us</Link>
-                  </li>
+                  {pagesMap}
                 </ul>
               </div>
             </nav>

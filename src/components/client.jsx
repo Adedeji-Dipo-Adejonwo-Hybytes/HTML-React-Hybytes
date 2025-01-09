@@ -1,4 +1,35 @@
 import { Container, Row, Col } from "react-bootstrap";
+const clientmap = ["images/client-1.jpg", "images/client-2.jpg" ]
+
+const clientel = [clientmap.map(client => (
+  <div className="item">
+  <div className="box">
+    <div className="client_id">
+      <div className="img-box">
+        <img src={client} alt=""/>
+      </div>
+      <div className="client_detail">
+        <div className="client_info">
+          <h6>
+            Jorch morik
+          </h6>
+          <i className="fa fa-star" aria-hidden="true"></i>
+          <i className="fa fa-star" aria-hidden="true"></i>
+          <i className="fa fa-star" aria-hidden="true"></i>
+          <i className="fa fa-star" aria-hidden="true"></i>
+          <i className="fa fa-star" aria-hidden="true"></i>
+        </div>
+        <i className="fa fa-quote-left" aria-hidden="true"></i>
+      </div>
+    </div>
+    <div className="client_text">
+      <p>
+        chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum
+      </p>
+    </div>
+  </div>
+</div> 
+))]
 
 function Client(){
     return(

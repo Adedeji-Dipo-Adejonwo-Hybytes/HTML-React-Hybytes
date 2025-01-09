@@ -1,5 +1,18 @@
 function Contact(){
-    return(
+  const forum = [{id:'text', holder:'Name'},
+    {id:'text', holder:'Phone Number'},
+    {id:'email', holder:'Email'},
+    {id:'text', holder:'Message'}
+  ]
+
+  const forumMap = forum.map(form =>(
+    <div>
+    <input type={form.id} placeholder={form.holder} className={form.holder === "Message"? "message-box":""}/>
+    </div>
+  ))
+
+
+  return(
         <section className="contact_section layout_padding">
         <div className="container">
           <div className="heading_container">

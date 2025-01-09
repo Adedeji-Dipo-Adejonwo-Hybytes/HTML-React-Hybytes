@@ -1,5 +1,16 @@
 import { Link } from 'react-router-dom';
 import { Navbar, Nav } from 'react-bootstrap';
+const pages = [{id:"Home", link:"/"},
+  {id:"About",link:"/About"},
+  {id:"Service",link:"/Services"},
+  {id:"Contact Us",link:"Contact"}
+]
+const pagesMap = pages.map(pages => (
+  <li className="nav-item active" key={page.id}>
+  <Link className="nav-link" to={pages.link}>{pages.id}
+  {pages.id === "Home"?<span className="sr-only">(current)</span>:null}</Link>
+</li>
+))
 
 
 function Header(){

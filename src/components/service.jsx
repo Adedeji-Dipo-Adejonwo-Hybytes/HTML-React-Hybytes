@@ -10,7 +10,7 @@ function Service(){
       img: "images/s3.png"
     }
   ]
-  const recycle = type.map(item => (
+  const serviceList = type.map(item => (
     <div className="col-sm-6 col-md-4 mx-auto">
     <div className="box ">
       <div className="img-box">
@@ -35,7 +35,7 @@ function Service(){
             <h2> Our Services </h2>
           </div>
           <div className="row">
-            {recycle}
+            {serviceList}
           </div>
           <div className="btn-box">
             <a href="">

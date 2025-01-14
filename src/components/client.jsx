@@ -1,7 +1,7 @@
 import { Container, Row, Col } from "react-bootstrap";
-const clientmap = ["images/client-1.jpg", "images/client-2.jpg" ]
+const clientList = ["images/client-1.jpg", "images/client-2.jpg" ]
 
-const clientel = [clientmap.map(client => (
+const clientMap = [clientList.map(client => (
   <div className="item">
   <div className="box">
     <div className="client_id">
@@ -42,9 +42,9 @@ function Client(){
           </div>
           <div className="carousel-wrap layout_padding2-top ">
             <div className="owl-carousel">
-              {clientel}
-              {clientel}
-              {clientel}
+              {clientMap}
+              {clientMap}
+              {clientMap}
             </div>
           </div>
         </div>

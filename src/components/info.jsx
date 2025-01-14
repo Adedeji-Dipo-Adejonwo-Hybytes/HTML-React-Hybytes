@@ -10,7 +10,7 @@ function Info(){
     str:'demo@gmail.com'
   }]
   
-  const recyclePlease = physcialItem.map(item => (
+  const itemList = physcialItem.map(item => (
   <div className="col-md-4">
     <a href="">
       <div className="item ">
@@ -28,22 +28,11 @@ function Info(){
   
   const socialMedia = ['facebook','twitter','youtube','instagram'];
 
-  const ElonMusk = socialMedia.map(media => 
+  const mediaList = socialMedia.map(media => 
     (<a href="" key={media}>
     <i className={`fa fa-${media}`} aria-hidden="true"></i>
     </a>)
   )
-
-
-
-
-
-
-
-
-
-
-
 
   return(
     <section className="info_section ">
@@ -55,7 +44,7 @@ function Info(){
             <div className="col-lg-10 mx-auto">
               <div className="info_items">
                 <div className="row">
-                  {recyclePlease}
+                  {itemList}
                 </div>
               </div>
             </div>
@@ -66,7 +55,7 @@ function Info(){
             Follow Us
           </h4>
           <div className="box">
-            {ElonMusk}
+            {mediaList}
           </div>
         </div>
     </section>

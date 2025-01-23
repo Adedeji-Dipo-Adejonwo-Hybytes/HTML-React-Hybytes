@@ -1,9 +1,13 @@
 import { Link } from 'react-router-dom';
 import { Navbar, Nav } from 'react-bootstrap';
-const pages = [{id:"Home", link:"/"},
-  {id:"About",link:"/About"},
-  {id:"Service",link:"/Services"},
-  {id:"Contact Us",link:"Contact"}
+import { useTranslation } from "react-i18next";
+
+const {t} = useTranslation();
+
+const pages = [{id:"Home", link:"/", idString:t('header.home')},
+  {id:"About",link:"/About", idString:t('header.about')},
+  {id:"Service",link:"/Services", idString:t('header.service')},
+  {id:"Contact Us",link:"Contact", idString:t('header.contactUs')}
 ]
 const pagesMap = pages.map(pages => (
   <li className="nav-item active" key={pages.id}>
@@ -14,6 +18,7 @@ const pagesMap = pages.map(pages => (
 
 
 function Header(){
+  const {t} = useTranslation();
     return( //remember div Hero Name
     <header className="header_section">
         <div className="header_top">
@@ -22,13 +27,13 @@ function Header(){
               <a href="tel:+01123455678990">
                 <i className="fa fa-phone" aria-hidden="true"></i>
                 <span>
-                  Call : +01 123455678990
+                t('header.call')
                 </span>
               </a>
               <a href="mailto:demo@gmail.com">
                 <i className="fa fa-envelope" aria-hidden="true"></i>
                 <span>
-                  Email : demo@gmail.com
+                t('header.email')
                 </span>
               </a>
             </div>
@@ -39,7 +44,7 @@ function Header(){
             <nav className="navbar navbar-expand-lg custom_nav-container ">
               <a className="navbar-brand" href="index.html">
                 <span>
-                  Inance
+                t('header.inance')
                 </span>
               </a>
   

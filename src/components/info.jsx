@@ -1,13 +1,17 @@
+import { useTranslation } from "react-i18next";
+
 function Info(){
+  const {t} = useTranslation();
+
   const physcialItem = [{
     item: 'map-marker',
-    str: 'Lorem Ipsum is simply dummy text'
+    str: t('info.dummy')
   },{
     item:'phone',
-    str:'+02 1234567890'
+    str:t('info.phone')
   },{
     item:'envelope',
-    str:'demo@gmail.com'
+    str:t('info.envelope')
   }]
   
   const itemList = physcialItem.map(item => (
@@ -38,7 +42,7 @@ function Info(){
     <section className="info_section ">
         <div className="container">
           <h4>
-            Get In Touch
+          t('info.getInTouch')
           </h4>
           <div className="row">
             <div className="col-lg-10 mx-auto">
@@ -52,7 +56,7 @@ function Info(){
         </div>
         <div className="social-box">
           <h4>
-            Follow Us
+          t('info.followUs')
           </h4>
           <div className="box">
             {mediaList}

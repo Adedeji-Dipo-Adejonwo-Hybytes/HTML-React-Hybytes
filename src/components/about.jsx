@@ -1,6 +1,9 @@
 import { Container, Row, Col, Button } from "react-bootstrap";
+import { useTranslation } from "react-i18next";
 
 function About(){
+  const {t} = useTranslation();
+
   return (
     <section className="about_section layout_padding-bottom">
     <Container>
@@ -8,13 +11,13 @@ function About(){
         <Col lg={5} md={6}>
           <div className="detail-box">
             <h2>
-              About us
+              t('about.aboutUs')
             </h2>
             <p>
-              There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomisedThere are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised
+            t('about.thereAre')
             </p>
             <Button variant="primary" href="">
-              Read More
+            t('about.readMore')
             </Button>
           </div>
         </Col>

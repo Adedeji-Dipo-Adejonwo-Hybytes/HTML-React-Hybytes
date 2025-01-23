@@ -1,4 +1,8 @@
+import { useTranslation } from "react-i18next";
+
 function Professional(){
+  const {t} = useTranslation();
+
     return(
         <section className="professional_section layout_padding">
         <div className="container">
@@ -10,15 +14,14 @@ function Professional(){
             </div>
             <div className="col-md-6 ">
               <div className="detail-box">
-                <h2>
-                  We Provide Professional <br/>
-                  Home Services.
+                <h2 dangerouslyUseHtmlString={true}>
+                  t('professional.provide')
                 </h2>
                 <p>
-                  randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All randomised words which don't look even slightly
+                t('professional.random')
                 </p>
                 <a href="">
-                  Read More
+                t('professional.readMore')
                 </a>
               </div>
             </div>

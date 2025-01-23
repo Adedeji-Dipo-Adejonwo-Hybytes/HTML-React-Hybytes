@@ -1,12 +1,16 @@
+import { useTranslation } from "react-i18next";
+
 function Service(){
+  const {t} = useTranslation();
+
   const type = [
-    {type :'Maintenance',
+    {type :t('service.maintainance'),
       img :"images/s1.png"
     },{
-      type:'Electrical',
+      type:t('service.electrical'),
       img: "images/s2.png"
     },{
-      type: 'Plumbing',
+      type: t('service.plumbing'),
       img: "images/s3.png"
     }
   ]
@@ -21,8 +25,7 @@ function Service(){
           {item.type}
         </h5>
         <p>
-          when looking at its layout. The point of using Lorem Ipsum is
-          that it has a more-or-less normal
+        t('service.text')
         </p>
       </div>
     </div>
@@ -32,14 +35,14 @@ function Service(){
         <section className="service_section layout_padding">
         <div className="container ">
           <div className="heading_container heading_center">
-            <h2> Our Services </h2>
+            <h2> t('service.services') </h2>
           </div>
           <div className="row">
             {serviceList}
           </div>
           <div className="btn-box">
             <a href="">
-              View More
+            t('service.viewMore')
             </a>
           </div>
         </div>

@@ -1,20 +1,22 @@
+import { useTranslation } from "react-i18next";
+
 function Slider(){
+  const {t} = useTranslation();
+
     return(
     <section className="slider_section ">
         <div className="container ">
           <div className="row">
             <div className="col-md-6 ">
               <div className="detail-box">
-                <h1>
-                  Repair and <br/>
-                  Maintenance <br/>
-                  Services
+                <h1 dangerouslyUseHtmlString={true}>
+                t('slider.repair')
                 </h1>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui harum voluptatem adipisci. Quos molestiae saepe dicta nobis pariatur, tempora iusto, ad possimus soluta hic praesentium mollitia consequatur beatae, aspernatur culpa.
+                t('slider.fakeText')
                 </p>
                 <a href="">
-                  Contact Us
+                t('slider.contactUs')
                 </a>
               </div>
             </div>

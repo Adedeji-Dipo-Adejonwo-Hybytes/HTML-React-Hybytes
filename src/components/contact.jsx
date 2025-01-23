@@ -1,8 +1,11 @@
+import { useTranslation } from "react-i18next";
+
 function Contact(){
-  const forum = [{id:'text', holder:'Name'},
-    {id:'text', holder:'Phone Number'},
-    {id:'email', holder:'Email'},
-    {id:'text', holder:'Message'}
+  const {t} = useTranslation();
+  const forum = [{id:'text', holder:'Name', holderString:t('contact.contactUs')},
+    {id:'text', holder:'Phone Number', holderString:t('contact.phoneNumber')},
+    {id:'email', holder:'Email', holderString:t('contact.email')},
+    {id:'text', holder:'Message', holderString:t('contact.message')}
   ]
 
   const forumMap = forum.map(form =>(

@@ -1,5 +1,6 @@
 import { Container, Row, Col } from "react-bootstrap";
 const clientList = ["images/client-1.jpg", "images/client-2.jpg" ]
+import { useTranslation } from "react-i18next";
 
 const clientMap = [clientList.map(client => (
   <div className="item">
@@ -11,7 +12,7 @@ const clientMap = [clientList.map(client => (
       <div className="client_detail">
         <div className="client_info">
           <h6>
-            Jorch morik
+          t('client.name')
           </h6>
           <i className="fa fa-star" aria-hidden="true"></i>
           <i className="fa fa-star" aria-hidden="true"></i>
@@ -24,7 +25,7 @@ const clientMap = [clientList.map(client => (
     </div>
     <div className="client_text">
       <p>
-        chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum
+      t('client.chunks')
       </p>
     </div>
   </div>
@@ -32,12 +33,13 @@ const clientMap = [clientList.map(client => (
 ))]
 
 function Client(){
+    const {t} = useTranslation();
     return(
         <section className="client_section ">
         <div className="container">
           <div className="heading_container heading_center">
             <h2>
-              What Our Clients Say
+            t('client.clents')
             </h2>
           </div>
           <div className="carousel-wrap layout_padding2-top ">

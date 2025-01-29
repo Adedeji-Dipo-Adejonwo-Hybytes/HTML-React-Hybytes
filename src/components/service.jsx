@@ -25,7 +25,7 @@ function Service(){
           {item.type}
         </h5>
         <p>
-        t('service.text')
+        {t('service.text')}
         </p>
       </div>
     </div>
@@ -35,14 +35,14 @@ function Service(){
         <section className="service_section layout_padding">
         <div className="container ">
           <div className="heading_container heading_center">
-            <h2> t('service.services') </h2>
+            <h2> {t('service.services')} </h2>
           </div>
           <div className="row">
             {serviceList}
           </div>
           <div className="btn-box">
             <a href="">
-            t('service.viewMore')
+            {t('service.viewMore')}
             </a>
           </div>
         </div>

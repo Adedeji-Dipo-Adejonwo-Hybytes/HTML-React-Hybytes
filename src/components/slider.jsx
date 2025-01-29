@@ -9,14 +9,12 @@ function Slider(){
           <div className="row">
             <div className="col-md-6 ">
               <div className="detail-box">
-                <h1 dangerouslyUseHtmlString={true}>
-                t('slider.repair')
-                </h1>
+                <h1 dangerouslySetInnerHTML={{__html: t('slider.repair')}} />
                 <p>
-                t('slider.fakeText')
+                {t('slider.fakeText')}
                 </p>
                 <a href="">
-                t('slider.contactUs')
+                {t('slider.contactUs')}
                 </a>
               </div>
             </div>

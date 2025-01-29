@@ -1,9 +1,9 @@
 import i18n from 'i18next';
-import { initReactI18next } from 'react-i18next';
+import { initReactI18next, Translation } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
 
 const resources = {
-  en: {
+  en: { translation:{
     about:{
       "aboutUs": "About us",
       "thereAre":"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomisedThere are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised",
@@ -17,7 +17,7 @@ const resources = {
     contact:{
       "contactUs":"Contact Us",
       "send": "SEND",
-      "name":"Name",
+      'name':"Name",
       "email":"Email",
       "phoneNumber":"Phone Number",
       "message":"Message"
@@ -28,7 +28,7 @@ const resources = {
       "maintain":"Maintain"
     },
     footer: {
-      "rights":"All Rights Reserved By ",
+      rights:'All Rights Reserved By',
       "lefts": "Free Html Templates "
     },
     header: {
@@ -61,12 +61,12 @@ const resources = {
       "viewMore":"View More"
     },
     slider:{
-      "repair" : "Repair and <br/> Maintenance <br/> Services",
-      "fakeText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui harum voluptatem adipisci. Quos molestiae saepe dicta nobis pariatur, tempora iusto, ad possimus soluta hic praesentium mollitia consequatur beatae, aspernatur culpa.",
-      "contactUs":"Contact Us"
-    },
+      repair : "Repair and <br/> Maintenance <br/> Services",
+      fakeText: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui harum voluptatem adipisci. Quos molestiae saepe dicta nobis pariatur, tempora iusto, ad possimus soluta hic praesentium mollitia consequatur beatae, aspernatur culpa.",
+      contactUs:"Contact Us"
+    },}
   },
-  ar: {
+  ar: {translation:{
     about:{
       "aboutUs": "معلومات عنا",
       "thereAre":"هناك العديد من التنويعات المتاحة لنصوص لوريم إبسوم، ولكن معظمها تعرض للتغيير بشكل ما، سواء عن طريق الدعابة المحقونة أو الكلمات المعشاة",
@@ -91,7 +91,7 @@ const resources = {
       "maintain":"صيانة"
     },
     footer: {
-      "rights":"جميع الحقوق محفوظة لـ",
+      rights:"جميع الحقوق محفوظة لـ",
       "lefts": "قوالب HTML المجانية"
     },
     header: {
@@ -128,7 +128,7 @@ const resources = {
       "fakeText": "لوريم إيبسوم دولور سيت أميت كونسيكتيتور أديبيسينج إليت. من يحب مشقة الحصول على أدبيات. كيف يمكن لهذه المتاعب أن تكشف عن أي شيء؟",
       "contactUs":"اتصل بنا"
     },
-  }
+  }}
 };
 
 i18n
@@ -142,7 +142,7 @@ i18n
     },
     // Uncomment if you want RTL support based on language
     react: {
-      useSuspense: true
+      useSuspense: false
     }
   });
 

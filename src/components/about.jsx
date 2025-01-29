@@ -11,13 +11,13 @@ function About(){
         <Col lg={5} md={6}>
           <div className="detail-box">
             <h2>
-              t('about.aboutUs')
+              {t('about.aboutUs')}
             </h2>
             <p>
-            t('about.thereAre')
+            {t('about.thereAre')}
             </p>
             <Button variant="primary" href="">
-            t('about.readMore')
+            {t('about.readMore')}
             </Button>
           </div>
         </Col>

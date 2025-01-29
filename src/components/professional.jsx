@@ -14,14 +14,12 @@ function Professional(){
             </div>
             <div className="col-md-6 ">
               <div className="detail-box">
-                <h2 dangerouslyUseHtmlString={true}>
-                  t('professional.provide')
-                </h2>
+                <h2 dangerouslySetInnerHTML={{__html:t('professional.provide')}}/>
                 <p>
-                t('professional.random')
+                {t('professional.random')}
                 </p>
                 <a href="">
-                t('professional.readMore')
+               { t('professional.readMore')}
                 </a>
               </div>
             </div>

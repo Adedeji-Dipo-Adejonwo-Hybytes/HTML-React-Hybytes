@@ -1,5 +1,7 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import '@/utils/i18n'; 
+import { useTranslation } from 'react-i18next';
 import Home from './pages/Home'; 
 import AboutUs from './pages/AboutUs';
 import Services from './pages/Services';
@@ -17,41 +19,51 @@ import Slider from './components/Slider';
 
 
 
-
-
-
-
-
 function App() {
+  const { t, i18n } = useTranslation();
+
+  useEffect(() => {
+    document.dir = i18n.dir();
+  }, [i18n.language]);
 
   return (
-    <>
     <Router>
       <Header />
       <Routes>
-        <Route path="/" element={<>
-        <Home />
-        
-        <Slider />
-        <Feature />
-        <About />      
-                                     <Professional />
-                                     <Service />
-                                     <Client />
-                                     <Contact />
-                                     <Info />
-                       
-        </>} />
-        <Route path="/about" element={ <><AboutUs/> <About/></>}/>
-        <Route path="/services" element={ <><Services/> <Service/></>}/>
-        <Route path="/contact" element={ <><ContactUs/> <Contact/></>}/>
-      
+        <Route path="/" element={
+          <>
+            <Home />
+            <Slider />
+            <Feature />
+            <About />      
+            <Professional />
+            <Service />
+            <Client />
+            <Contact />
+            <Info />
+          </>
+        } />
+        <Route path="/about" element={
+          <>
+            <AboutUs/> 
+            <About/>
+          </>
+        }/>
+        <Route path="/services" element={
+          <>
+            <Services/> 
+            <Service/>
+          </>
+        }/>
+        <Route path="/contact" element={
+          <>
+            <ContactUs/> 
+            <Contact/>
+          </>
+        }/>
       </Routes>
       <Footer />
-
-
     </Router>
-    </>
   )
 }
 

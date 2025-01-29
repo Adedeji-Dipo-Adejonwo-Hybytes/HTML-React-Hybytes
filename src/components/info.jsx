@@ -42,7 +42,7 @@ function Info(){
     <section className="info_section ">
         <div className="container">
           <h4>
-          t('info.getInTouch')
+          {t('info.getInTouch')}
           </h4>
           <div className="row">
             <div className="col-lg-10 mx-auto">
@@ -56,7 +56,7 @@ function Info(){
         </div>
         <div className="social-box">
           <h4>
-          t('info.followUs')
+          {t('info.followUs')}
           </h4>
           <div className="box">
             {mediaList}

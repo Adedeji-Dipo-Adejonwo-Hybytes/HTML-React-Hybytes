@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next";
 
 function Contact(){
   const {t} = useTranslation();
-  const forum = [{id:'text', holder:'Name', holderString:t('contact.contactUs')},
+  const forum = [{id:'text', holder:'Name', holderString:t('contact.name')},
     {id:'text', holder:'Phone Number', holderString:t('contact.phoneNumber')},
     {id:'email', holder:'Email', holderString:t('contact.email')},
     {id:'text', holder:'Message', holderString:t('contact.message')}
@@ -10,7 +10,7 @@ function Contact(){
 
   const forumMap = forum.map(form =>(
     <div>
-    <input type={form.id} placeholder={form.holder} className={form.holder === "Message"? "message-box":""}/>
+    <input type={form.id} placeholder={form.holderString} className={form.holder === "Message"? "message-box":""}/>
     </div>
   ))
 
@@ -20,7 +20,7 @@ function Contact(){
         <div className="container">
           <div className="heading_container">
             <h2>
-              Contact Us
+            {t('contact.contactUs')}
             </h2>
           </div>
           <div className="row">
@@ -29,7 +29,7 @@ function Contact(){
                 {forumMap}
                 <div className="d-flex ">
                   <button>
-                    SEND
+                  {t('contact.send')}
                   </button>
                 </div>
               </form>

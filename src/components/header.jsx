@@ -1,14 +1,17 @@
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useTranslation } from "react-i18next";
+import { useState } from 'react';
+
 
 function Header(){
   const { t, i18n } = useTranslation();
+  const navigate = useNavigate();
 
   const pages = [
-    {id:"Home", link:"/", idString: t('header.home')},
-    {id:"About", link:"/About", idString: t('header.about')},
-    {id:"Service", link:"/Services", idString: t('header.service')},
-    {id:"Contact Us", link:"Contact", idString: t('header.contactUs')}
+    {id:"Home", link:`/${i18n.language}`, idString: t('header.home')},
+    {id:"About", link:`/About/${i18n.language}`, idString: t('header.about')},
+    {id:"Service", link:`/Services/${i18n.language}`, idString: t('header.service')},
+    {id:"Contact Us", link:`/Contact/${i18n.language}`, idString: t('header.contactUs')}
   ];
 
   const pagesMap = pages.map(page => (
@@ -22,6 +25,7 @@ function Header(){
 
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
+    navigate(`/${lng}`)
   };
 
   return (

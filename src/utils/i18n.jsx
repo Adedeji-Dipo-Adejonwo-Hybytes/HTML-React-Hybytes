@@ -20,7 +20,10 @@ const resources = {
       'name':"Name",
       "email":"Email",
       "phoneNumber":"Phone Number",
-      "message":"Message"
+      "message":"Message",
+      "sending": "Sending...",
+      "success": "Message sent successfully!",
+      "error": "Error sending message. Please try again later."
     },
     feature:{
       "repair": "Repair",
@@ -83,7 +86,10 @@ const resources = {
       "name":"الاسم",
       "email":"البريد الإلكتروني",
       "phoneNumber":"رقم الهاتف",
-      "message":"الرسالة"
+      "message":"الرسالة",
+      "sending": "جاري الإرسال...",
+      "success": "تم إرسال الرسالة بنجاح!",
+      "error": "خطأ في إرسال الرسالة. يرجى المحاولة مرة أخرى لاحقًا.",
     },
     feature:{
       "repair": "إصلاح",
